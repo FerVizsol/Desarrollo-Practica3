@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="toggleButton">⛩MENU</button>
+            <ul id="list">
+                <li><a href="">INICIO</a></li>
+                <li><a href="">CSS</a></li>
+                <li><A href="">HTML</A></li>
+            </ul>
+        </nav>
+        <script>
+            const toggleButton = document.getElementById('toggleButton');
+            const list = document.getElementById('list');
+            toggleButton.addEventListener('click', () => {
+                if (list.style.display === 'none' || list.style.display === '') {
+                    list.style.display = 'block';
+                } else {
+                    list.style.display = 'none';
+                }
+            });
+        </script>
+        <div id="tituloDiv">
+            <h3>BEAUTIFUL RESPONSIVE WEB SITE</h3>
+            <h1 id="titulo">BUILT WITH W3.CSS</h1>
+            <button id="botonref">LEARN W3.CSS</button>
+        </div>
+        
+    </header>
+    <section class="contenedorflex">
+        <div class="caja">
+            <h1>
+                Responsive
+            </h1>
+            <img src="desktop.png">
+            <h3>
+            ########
+            </h3>
+            <h3>
+                ########
+            </h3>
+
+        </div>
+        <div class="caja">
+            <h1>
+                Standard CSS
+            </h1>
+            <img src="css-3.png">
+            <h3>
+                ########
+            </h3>
+            <h3>
+                ########
+            </h3>
+
+        </div>
+        <div class="caja">
+            <h1>
+                Design
+            </h1>
+            <img src="diamond.png">
+            <h3>
+                ########
+            </h3>
+            <h3>
+                ########
+            </h3>
+        </div>
+    </section>
+    
+</body>
+</html>
