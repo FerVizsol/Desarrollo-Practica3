@@ -1,0 +1,70 @@
+/* regex.css */
+/* Seleccionar elementos cuyos atributos 'id' comienzan con 'nombre' */
+[id^="nombre"] {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+/* Seleccionar elementos cuyos atributos 'id' contienen 'numero' en cualquier posición */
+[id*="numero"] {
+    font-style: italic;
+    color: rgb(255, 0, 0);
+}
+/* Seleccionar elementos cuyos atributos 'name' terminan con '_mail' */
+[name$="_mail"] {
+    background-color:rgb(201, 201, 201); /* Amarillo */
+}
+/* Seleccionar elementos cuyos atributos 'name' coinciden exactamente con 'user_message' */
+[name="user_message"] {
+    background-color: rgb(201, 201, 201);
+    font-size: 18px;
+}
+/* Seleccionar elementos cuyos atributos 'id' contienen solo números */
+[id$="^[0-9]+$"] {
+    border: 2px dashed rgb(201, 201, 201);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+/* Reglas css combinado*/
+/* Cambiar el color de fondo de los campos de entrada cuando se enfocan en ellos */
+input:focus {
+    background-color: #f0f0f0; /* Gris más claro */
+}
+/* Cambiar el color de texto en los campos de entrada cuando se enfocan en ellos */
+input:focus {
+    color: #333; /* Color de texto oscuro */
+}
+/* Cambiar el color de fondo de la etiqueta y el borde del campo de entrada cuando se enfocan en ellos */
+input:focus + label {
+    background-color: #00CED1; /* Turquesa más claro */
+    border-color: #00CED1; /* Turquesa más claro */
+    color: #FFF; /* Color de texto blanco */
+}
+/* Establecer reglas CSS basadas en casos múltiples */
+/* Cambiar el estilo de fuente de los botones */
+.button button {
+    font-family: Arial, sans-serif;
+}
+/* Añadir un borde a los campos de entrada cuando están inactivos */
+input, textarea {
+    border: 1px solid #DDD; /* Gris claro */
+}
+/* Cambiar el margen superior de los elementos de la lista dentro del formulario */
+form ul li {
+    margin-top: 1em;
+}
+/* Cambiar el tamaño de fuente de las etiquetas */
+label {
+    font-size: 18px; /* Tamaño de fuente más grande */
+}
+/* Cambiar el color de fondo del cuerpo */
+body {
+    background-color: #219ed0; /* Turquesa más claro */
+}
+
+
+
+/*  CSS referente a la practica N1 */
+body {
+    background-color: rgb(33, 128, 207)
+}
+/* Ajustar el color del texto y el borde del formulario */
+form {
+    background-color: #FFF;
+    color: #333; /* Color de texto oscuro */
+    border: 2px solid #008080; /* Turquesa más oscuro */
+}
+
+/* Cambiar el color de fondo de los campos de entrada y área de texto */
+input, textarea {
+    background-color: white; /* Gris claro */
+}
+/* Cambiar el color del botón y el texto del botón */
+.button button {
+    background-color: #008080; /* Turquesa más oscuro */
+    color: #FFF;
+}
+/* Cambiar el color del borde cuando se enfoca en campos de entrada y área de texto */
+input:focus, textarea:focus {
+    border-color: #00CED1; /* Turquesa más claro */
+}
+
+form { 
+    /* Centrar el formulario en la página */ 
+    margin: 0 auto; 
+    width: 400px; 
+    /* Esquema del formulario */ 
+    padding: 1em; 
+    border: 1px solid #CCC; 
+    border-radius: 1em; 
+    text-align: center;
+} 
+ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    font-size: 16px;   
+}
+h1{
+    text-align: center;
+    vertical-align: super;
+    font: georgia  ;
+    color:whitesmoke;
+    font-size: 45px;
+}
+h1 image{
+    vertical-align:sub;
+    margin-right: 10px;
+}
+
+/* separacion entre lineas*/
+form li + li { 
+    margin-top: 1.5em; 
+} 
+
+/* Tamaño y alineación uniforme */
+label { 
+    display: inline-block; 
+    width: 140px; 
+    text-align: left; 
+} 
+
+input, textarea { 
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra */ 
+    font: 1em georgia; 
+    /* Tamaño uniforme del campo de texto */ 
+    width: 250px; 
+    box-sizing: border-box; 
+    /* Hacer coincidir los bordes del campo del formulario */ 
+    border: 1px solid #999; 
+} 
+input:focus, 
+textarea:focus { 
+    /* Destacado adicional para elementos que tienen el cursor */ 
+    border-color: #000; 
+} 
+textarea { 
+    /* Alinear los campos de texto multilínea con sus etiquetas */ 
+    vertical-align: top; 
+    /* Proporcionar espacio para escribir texto */ 
+    height: 5em;
+    font-size: 12px;
+    text-align: center; 
+    color: #333;
+} 
+.button { 
+    /* Alinear los botones con los campos de texto */ 
+    text-align: center; 
+    margin-top: 1em; 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

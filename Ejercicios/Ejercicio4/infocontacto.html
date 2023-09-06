@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Formulario Web</title> 
+    <link rel="stylesheet" href="css_infocontacto/combinadosymultiples.css">
+    <link rel="stylesheet" href="css_infocontacto/regex.css">
+    <link rel="stylesheet" href="css_infocontacto/hereciaycascada.css">
+    <meta property="og:title" content= "Antojitos del Mar | Contactanos"/> 
+    <meta property="og:type" content= "website"/> 
+    <meta property="og:url" content= "https://www.AntojitosdelMar.pe/Contactanos" /> 
+    <meta property="og:image" content= "AntojitosdelMar.png"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contactanos | Antojitos del mar">
+    <meta name="twitter:description" content="La cevichería más emblemática del Perú 'Antojitos del Mar' ubicada en Chala City, 
+    aclamada por su excelencia en la preparación de ceviche, es un verdadero tesoro culinario que resalta la riqueza de la gastronomía peruana.
+    Sus platos son una exquisita combinación de tradición, frescura y sabores únicos que capturan la esencia misma 
+    de la costa peruana.">
+    <meta name="twitter:image" content="AntojitosdelMar.png">
+</head> 
+<body> 
+    <h1><img src="AntojitosdelMar.png" width="70"> Informacion Cliente</h1> 
+    <form action="/my-handling-form-page" method="post"> 
+        <ul> 
+            <li>  
+                <label for="nombre_apellidos">Nombre y Apellidos:</label> 
+                <input type="text" id="nombre" name="nombre_apellidos" required> 
+            </li> 
+            <li>  
+                <label for="numero">Numero Telefonico:</label> 
+                <input type="numero" id="numero" name="numero" required> 
+            </li> 
+            <li>  
+                <label for="email">Correo Electrónico:</label> 
+                <input type="email" id="email" name="user_mail" required> 
+            </li> 
+            <li>  
+                <label for="preferencias">Preferencias:</label> 
+                <textarea id="preferencias" name="user_message" rows="4" required>Indiquenos sus preferencias.</textarea>         
+            </li> 
+            <li class="button"> 
+                <button type="submit">Enviar</button> 
+            </li> 
+        </ul> 
+    </form> 
+
+    <script>
+        // inicializacion de objetos
+        var cliente1 = {
+            nombre: "Juan Perez",
+            numeroTelefonico: "123456789",
+            correoElectronico: "juan_perez@gmail.com",
+            preferencias: "Me gusta el ceviche de corvina.",
+            ciudad: "Lima",
+        };
+        // Acceder a la propiedades
+        console.log("Nombre del cliente: " + cliente1.nombre);
+        console.log("Número telefónico: " + cliente1.numeroTelefonico);
+        
+        // Acceder a la nueva propiedad parte B
+        console.log("Ciudad del cliente: " + cliente1.ciudad);
+
+        // Agregar obejtos por medio de Constructor de Cliente
+        function Cliente(nombre, numeroTelefonico, correoElectronico, preferencias,ciudad) {
+            this.nombre = nombre;
+            this.numeroTelefonico = numeroTelefonico;
+            this.correoElectronico = correoElectronico;
+            this.preferencias = preferencias;
+            this.ciudad = ciudad; // Nueva propiedad
+        }
+        // Crear un nuevo cliente
+        var cliente2 = new Cliente("María Rodríguez", "987-654-3210", "maria@gmail.com", "Me encanta el ceviche de camarones.");
+        
+        // Acceder a la nueva propiedad
+        console.log("Ciudad del cliente: " + cliente2.ciudad);
+        
+        // Acceder a las propiedades del objeto
+        console.log("Nombre del cliente: " + cliente2.nombre);
+        console.log("Número telefónico: " + cliente2.numeroTelefonico);
+
+        // agregar objetos utilizando objet.create
+        // Prototipo de Cliente
+        var clientePrototipo = {
+            informacion: function () {
+                return (
+                    "Nombre: " + this.nombre +
+                    "\nNúmero telefónico: " + this.numeroTelefonico +
+                    "\nCorreo Electrónico: " + this.correoElectronico +
+                    "\nPreferencias: " + this.preferencias+
+                    "\nCiudad: " + this.ciudad // Nueva propiedad
+                );
+            },
+        };
+        // Crear un nuevo cliente utilizando Object.create
+        var cliente3 = Object.create(clientePrototipo);
+        cliente3.nombre = "Carlos González";
+        cliente3.numeroTelefonico = "555555555";
+        cliente3.correoElectronico = "carlos_gonzales@gmail.com";
+        cliente3.preferencias = "Me gusta el chicharron mixto.";
+        cliente3.ciudad = "Trujillo"; // Nueva propiedad
+
+        // Acceder a las propiedades del objeto
+        console.log(cliente3.informacion());
+
+        // Acceder a la nueva propiedad
+        console.log("Ciudad del cliente: " + cliente3.ciudad);
+    </script>
+</body> 
+</html> 

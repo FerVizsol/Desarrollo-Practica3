@@ -1,0 +1,29 @@
+/* Reglas CSS basadas en herencia */
+/* 1. Heredar el color del texto para todo el cuerpo del documento */
+body {
+    color: inherit;
+}
+/* 2. Heredar el tamaño de fuente para los párrafos dentro de un div con la clase "contenido" */
+.contenido p {
+    font-size: inherit;
+}
+/* 3. Heredar el estilo de fuente para los elementos de lista no ordenada dentro de un div con la clase "sidebar" */
+.sidebar ul {
+    font-family: inherit;
+}
+/* 4. Heredar el espaciado entre líneas para los elementos de encabezado h2 dentro de un div con la clase "seccion" */
+.seccion h2 {
+    line-height: inherit;
+}
+/* 5. Heredar el margen izquierdo para los elementos de párrafo con la clase "destacado" */
+.destacado p {
+    margin-left: inherit;
+}
+/* 6. Heredar la alineación de texto para los elementos de enlace dentro de un menú */
+.menu a {
+    text-align: inherit;
+}
+/* 7. Heredar el estilo de borde para los elementos de tabla dentro de un div con la clase "tabla-container" */
+.tabla-container table {
+    border: inherit;
+}
